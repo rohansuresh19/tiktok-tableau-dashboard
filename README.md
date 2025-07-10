@@ -1,81 +1,84 @@
-# 📱 TikTok Tableau Dashboard – Coursera Project
+TikTok Claims vs Opinions: Tableau EDA Dashboard
+Coursera Capstone Project — Google Advanced Data Analytics Specialization
 
-This repository contains an interactive Tableau dashboard analyzing TikTok video performance data, built as part of a Coursera data visualization project.
+🔗 Live Dashboard
+👉 View on Tableau Public »
 
-🔗 **Live Dashboard:**  
-👉 [Click to view on Tableau Public](https://public.tableau.com/app/profile/rohan.suresh6600/viz/TikTokProjectCoursera_17471371209810/BoxplotDashboard)
+🎯 Project Overview
+This project investigates patterns in TikTok video performance, focusing on the classification of videos as claims or opinions. The objective was to uncover how engagement metrics such as views, likes, and comment counts vary by content type—and what that might imply for content moderation or future machine learning models.
 
----
+📌 Key Features
+📦 Boxplots showing distribution for:
 
-## 🎯 Project Overview
+Video Duration
 
-This project explores trends in TikTok video engagement by comparing **claim** and **opinion** content. The goal was to visualize how metrics like views, likes, and author status differ between content types to support content moderation strategies.
+Like Count
 
-### ✅ Key Features
+Comment Count
 
-- 📦 **Boxplots**: Visual distribution of  
-  - Video Duration  
-  - Like Count  
-  - Comment Count  
-  - View Count  
-- 📊 **Claim vs Opinion** Content Distribution  
-- 🚫 **Author Ban Status** Breakdown  
-- 🎛️ Interactive Filters for Data Exploration
+View Count
 
----
+📊 Claims vs Opinions comparison by:
 
-## 🔍 Insights Uncovered
+Engagement metrics
 
-- **Claim videos** generally receive **higher engagement** than opinion videos.
-- **Banned authors** are more commonly associated with claim content.
-- **Verified users** tend to post opinion-based content.
-- Outliers were detected in all key engagement metrics using boxplots.
+Author verification and ban status
 
----
+🎛️ Interactive Filters to explore relationships between variables
 
-## 🧠 PACE Strategy Summary
+🔍 Insights & Impact
+🔺 Claim videos attract significantly more engagement (views, likes, shares) than opinions.
 
-**Plan:**  
-- Variables: `claim_status`, `author_ban_status`, `verified_status`, engagement metrics  
-- Units: seconds, counts; some nulls in comment/share count  
-- Tools: Descriptive statistics, IQR-based outlier detection, Tableau visuals
+🚫 Banned authors are disproportionately associated with claim content.
 
-**Analyze:**  
-- Cleaned and transformed data, no joins required  
-- Mixed visuals: boxplots for internal insights, pie/bar charts for broader audience  
+✅ Verified users are more likely to post opinion-based content.
 
-**Construct:**  
-- Built in Tableau with embedded filters  
-- Interactive exploration based on claim status and author type  
+📈 Engagement data is heavily skewed, suggesting outliers are common and need to be addressed in predictive modeling.
 
-**Execute:**  
-- Shared via Tableau Public  
-- Supported strategic insights for content policy and moderation
+⚠️ Detected over 200 nulls across 7 variables—highlighting the need for robust data cleaning and imputation strategies.
 
----
+🧠 Methodology (PACE Strategy)
+Plan
 
-## 📁 Files Included
+Key variables: claim_status, verified_status, author_ban_status, and engagement metrics
 
-| File | Description |
-|------|-------------|
-| `TikTok Project (Coursera).twbx` | Tableau workbook with full dashboard |
-| `tiktok_dataset.xlsx` | Cleaned TikTok dataset used in Tableau |
-| `TikTok_EDA_Executive_Summary.docx` | Full project summary with PACE framework |
+Tools: Python for EDA and preprocessing; Tableau for visual storytelling
 
----
+Considered missing values, skewness, and content-label imbalances
 
-## 🛠 Tools Used
+Analyze
 
-- **Tableau Public** – Dashboard & Visualization  
-- **Microsoft Excel** – Initial data prep  
-- **Python (Optional)** – For data inspection and plotting  
-- **Coursera** – Project submitted as part of Google Advanced Data Analytics specialization
+Applied descriptive statistics and IQR-based outlier detection
 
----
+Used boxplots and histograms to explore distributions and correlations
 
-📬 **Author:** Rohan Suresh  
-🗂️ GitHub: [`@rohansuresh19`](https://github.com/rohansuresh19)
+Construct
 
----
+Built an interactive dashboard in Tableau Public
 
-> _“Turning raw metrics into meaningful visuals to guide smart decisions.”_
+Visuals were designed with accessibility and executive-readability in mind
+
+Execute
+
+Shared the dashboard for stakeholder and peer feedback
+
+Summary findings documented in a structured executive summary report
+
+📁 Included Files
+File	Description
+TikTok Project (Coursera).twbx	Tableau workbook containing full dashboard
+tiktok_dataset.xlsx	Cleaned dataset used for analysis
+TikTok_EDA_Executive_Summary.docx	Business-style summary using the PACE framework
+
+🛠 Tools & Technologies
+Tableau Public – Interactive dashboard and storytelling
+
+Python (pandas, seaborn) – Exploratory data analysis
+
+Excel – Data transformation & cleanup
+
+Coursera – Project conducted as part of a certified data analytics specialization
+
+👤 Author
+Rohan Suresh
+📬 GitHub: @rohansuresh19
